@@ -19,3 +19,21 @@ After specified *__Duration__* of *__Event__* (plus some small delay) *__Result_
 *__Stake__* is sharred proportianally among *__Users__* having in regard *__Contribution__* amount to *__Stake__*.
 
 *__User__* can see all past *__Betting__* history as this is public and transparent.
+
+
+# Technical consideration
+
+## On-chain 
+All data related to *__User__* decisions for transparency, immutablity and secuiry will be stored in blockchain.
+User interface will communicate only with Solidity contracts via web3 library.
+
+## Off-chain
+We will spin up .NET application that will communicate with third party API sourcing in reasonable way (cache) information about upcomming *__Events__* and *__Results__*.
+
+This application will :
+- store upcomming *__Events__* to blockchain making them availiable to *__Users__*.
+- store result of *__Event__* to blockchain making possible *__Withdraw__* to *__Users__*.
+
+## Problems
+1. How to verify that address is blockchain user?
+  
