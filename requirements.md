@@ -6,9 +6,11 @@
 
 *__Users__* can pick one of many *__Result Options__* and send *__Contribution__* to *__Stake__* sending amouth of Ether(ETH). This *__User__* activity is called *__Betting__*.
 
-*__Betting__* can be done one or more time by *__User__* to the same *__Event__* before *__Start Time__* of *__Event__*. 
+*__Betting__* can be done one or more time by *__User__* to the same *__Event__* before *__Start Time__* of *__Event__*.
 
 Each *__Betting__* has additional behind called *__Provision__*. *__Provision__* is used to maintain product as well as pay gas for execution in Etherum blockchain. 
+
+*__Betting__* activitiy present to *__User__* predicted *__Prize__* assuming picking *__Result Option__*.
 
 After specified *__Duration__* of *__Event__* (plus some small delay) *__Result__* is known. This means *__Event__* is in *__Finished State__*.
 
