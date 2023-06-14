@@ -18,7 +18,13 @@ With a user-friendly interface, seamless navigation, and responsive customer sup
 
 In summary, Krypto Kick Stake is a revolutionary bet engine that focuses on football and offers the potential to expand into other sports disciplines in the future. Through its wide range of football games, blockchain technology, multiplayer options, and rewarding system, the platform offers an immersive and entertaining experience for football fans worldwide. So, step into the world of Krypto Kick Stake, stake your ETH on football matches, and get ready to kick-start your betting journey!
 
-# Project structure
+# Technical documentation
+
+## Domain language & requirements
+
+For technical documentation pleas see [Requirements](requirements.md).
+
+## Project structure
 
 ```
 /krypto-kick-stake - root of project
@@ -27,6 +33,3 @@ In summary, Krypto Kick Stake is a revolutionary bet engine that focuses on foot
   /smart-contracts - Solidity smart contracts
 ```
 
-# Technical documentation
-
-For technical documentation pleas see [Requirements](requirements.md).
