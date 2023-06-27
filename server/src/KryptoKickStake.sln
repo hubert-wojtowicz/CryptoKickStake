@@ -7,9 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptoKickStake.Api", "Kryp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KryptoKickStake.Tests", "KryptoKickStake.Tests\KryptoKickStake.Tests.csproj", "{31F1FB87-1793-466C-B251-8A21CE369D3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoKickStake.Infrastructure", "CryptoKickStake.Infrastructure\CryptoKickStake.Infrastructure.csproj", "{C0440DB7-BD98-4FDE-9987-BE3BD76EC67B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoKickStake.Infrastructure", "CryptoKickStake.Infrastructure\CryptoKickStake.Infrastructure.csproj", "{C0440DB7-BD98-4FDE-9987-BE3BD76EC67B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoKickStake.Domain", "CryptoKickStake.Domain\CryptoKickStake.Domain.csproj", "{4246B5C4-959A-40AE-864E-DCF610AA7941}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoKickStake.Domain", "CryptoKickStake.Domain\CryptoKickStake.Domain.csproj", "{4246B5C4-959A-40AE-864E-DCF610AA7941}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{47013959-3ADF-46B4-92DC-977750C2C228}"
+	ProjectSection(SolutionItems) = preProject
+		scripts.ps1 = scripts.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

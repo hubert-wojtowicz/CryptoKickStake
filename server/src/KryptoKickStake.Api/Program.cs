@@ -1,4 +1,8 @@
+using CryptoKickStake.Infrastructure.Database;
 using CryptoKickStake.Infrastructure.FixtureClient;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +21,13 @@ builder.Services.AddHttpClient<IFixtureClient, FixtureClient>((serviceProvider, 
     var xRapidApiHost = config["FixtureClient:XRapidApiHost"];
     client.DefaultRequestHeaders.Add("X-RapidAPI-Key", xRapidApiKey);
     client.DefaultRequestHeaders.Add("X-RapidAPI-Host", xRapidApiHost);
+});
+
+builder.Services.AddDbContext<CryptoKickStakeDbContext>((serviceProvider, options) =>
+{
+    var config = serviceProvider.GetService<IConfiguration>();
+    var connectionString = config!.GetConnectionString(nameof(CryptoKickStakeDbContext));
+    options.UseSqlServer(connectionString);
 });
 
 var app = builder.Build();
